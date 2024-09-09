@@ -5,33 +5,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>odin-recipes</title>
         <link rel="stylesheet" href="/Users/itsonlydaniii/Python.py/The Odin Project/Code/styles.css">
+        <style>
+            /* Styling for the recipe boxes */
+        .course-container {
+            display: flex; /* Flexbox layout for horizontal alignment */
+            justify-content: space-around; /* Space between the boxes */
+            flex-wrap: wrap; /* Allows wrapping of boxes on smaller screens */
+            gap: 20px; /* Space between boxes */
+        }
+
+        .course-box {
+            background-color: #e1e1e1; /* White background color */
+            padding: 10px;
+            border-radius: 8px; /* Rounded corners for the box */
+            width: 30%; /* Width of each course box */
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect for visual separation */
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .course-box h2 {
+            font-size: 20px; /* Responsive font size for course title */
+            margin: 10px 0;
+            color: #8e24aa; /* Dark purple color for course title */
+        }
+
+        .course-box img {
+            width: 100%; /* Responsive image width */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto;
+            border-radius: 2px; /* Rounded corners for images */
+        }
+
+        .course-box h3 {
+            font-size: 18px; /* Responsive font size for course subtitle */
+            margin: 10px 0;
+            color: #333333; /* Dark text color for readability */
+        }
+
+        .course-box p {
+            font-size: 16px; /* Font size for the description */
+            margin: 10px 0;
+            color: #666666; /* Lighter text color for descriptions */
+        }
+
+        .course-box .enroll-button {
+            background-color: #029c91; /* Teal background color for the button */
+            color: white; /* White text color for the button */
+            border: none; /* No border for the button */
+            padding: 10px 20px; /* Adjusted padding for better spacing */
+            border-radius: 4px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Button font size */
+            transition: background-color 0.3s; /* Smooth transition effect */
+            margin-top: 10px; /* Space above the button */
+        }
+
+        .course-box .enroll-button:hover {
+            background-color: #028e81; /* Slightly darker teal on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .course-box {
+                width: 45%; /* Adjust width for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .course-box {
+                width: 100%; /* Full width for smartphones */
+            }
+        }
+        </style>
     </head>
     <body>
         <section id="recipes">
             <h1>Simple, Easy Recipes</h1>
             <div class="recipes">
-                <div class="recipe-item">
-                    <h2>Lasagna</h2>
-                    <img src="https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2.jpg" alt="Lasagna">
-                    <p>Discover the only lasagna recipe you&apos;ll ever need! Continue reading to learn how to make this meaty, cheesy, crowd-pleasing Simply Lasagna Recipe tonight.</p>
-                    <a href="/Users/itsonlydaniii/Python.py/The Odin Project/Code/Recipes/lasagna.html">View Recipe</a>
-                </div>
-                
-                <div class="recipe-item">
-                    <h2>Cheese Cake</h2>
-                    <img src="https://ashleemarie.com/wp-content/uploads/2019/12/perfect-creamy-cheesecake-recipe.jpg" alt="Cheese Cake">
-                    <p>This cheesecake recipe is our best recipe for cheesecake with a rich and creamy texture and cherry topping for an indulgent dessert that is also easy to make! It is the perfect dessert to serve at your next party.</p>
-                    <a href="/Users/itsonlydaniii/Desktop/Odin Recipes/cheesecake.html">View Recipe</a>
-                </div>
-                
-                <div class="recipe-item">
-                    <h2>Beef Stew</h2>
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.zimA3gAK9glUGkKKY9QImAHaE8&pid=Api&P=0&h=220" alt="Beef Stew">
-                    <p>This hearty beef stew is rich, satisfying, and packed with tender beef, lots of vegetables, and fragrant herbs.</p>
-                    <a href="/Users/itsonlydaniii/Desktop/Odin Recipes/beef-stew.html">View Recipe</a>
-                </div>
+                <div class="course-container">
+                    <div class="course-box">
+                        <h2>Lasagna</h2>
+                        <img src="https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2.jpg" alt="Lasagna"> <!-- Placeholder image -->
+                        <p>Discover the only lasagna recipe you&apos;ll ever need! Continue reading to learn how to make this meaty, cheesy, crowd-pleasing Simply Lasagna Recipe tonight.</p><br/><br/><br/><br/>
+                        <a href="/Users/itsonlydaniii/Python.py/The Odin Project/Code/Recipes/lasagna.html">View Recipe</a>
+                    </div>
+        
+                    <div class="course-box">
+                        <h2>Cheese Cake</h2>
+                        <img src="https://www.thespruceeats.com/thmb/NqFZ_P7qDNTLMaiRWWbYBRPt6I8=/1500x1096/filters:fill(auto,1)/cheesecake-1500-57bb942b5f9b58cdfd731b61.jpg" alt="Cheese Cake"> <!-- Placeholder image -->
+                        <p>This cheesecake recipe is our best recipe for cheesecake with a rich and creamy texture and cherry topping for an indulgent dessert that is also easy to make! It is the perfect dessert to serve at your next party.</p>
+                        <a href="/Users/itsonlydaniii/Documents/GitHub/simple-recipes/cheesecake.html">View Recipe</a>
+                    </div>
+        
+                    <div class="course-box">
+                        <h2>Beef Stew</h2>
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.zimA3gAK9glUGkKKY9QImAHaE8&pid=Api&P=0&h=220" alt="Beef Stew"><!-- Placeholder image -->
+                        <p>This hearty beef stew is rich, satisfying, and packed with tender beef, lots of vegetables, and fragrant herbs.</p>
+                        <a href="/Users/itsonlydaniii/Desktop/Odin Recipes/beef-stew.html">View Recipe</a>
+                    </div>
             </div>
         </section>
     </body>
 </html>
-Explanation:
+
+

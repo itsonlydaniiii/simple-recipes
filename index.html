@@ -4,24 +4,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <title>odin-recipes</title>
+        <style>
+             /* Navigation bar styling */
+        .navbar {
+            position: fixed; /* Fixed position to stick to the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            max-width: 1200px; /* Max width to prevent stretching */
+            margin: 0 auto; /* Center the navbar */
+            font-size: 18px;
+            background-color: #ffffff; /* White background color for the navbar */
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between logo and links */
+            align-items: center; /* Vertically align items */
+            padding: 10px 20px; /* Default padding */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect for visual separation */
+            z-index: 1000; /* Ensures navbar is above other content */
+        }
+
+        .navbar img {
+            width: 200px; /* Width of the company logo */
+            height: auto; /* Auto height to maintain aspect ratio */
+        }
+
+        /* Styling for nav links */
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #8e24aa; /* Dark Purple color for text links */
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid transparent; /* Default border for buttons */
+            border-radius: 4px; /* Rounded corners for buttons */
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition effects */
+        }
+
+        .nav-links a:hover {
+            background-color: #9b51df; /* Light Purple color on hover */
+            color: white;
+        }
+
+        .navbar .home {
+            color: #8e24aa; /* Dark Purple color for the Home link */
+        }
+
+        .navbar .home:hover {
+            background-color: #9b51df; /* Light Purple color on hover for Home link */
+            color: #ffffff;
+        }
+        </style>
     </head>
     <body>
-        <h1>Odin Recipes</h1>
-        <h2>Lasagna</h2>
-        <img src="https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2.jpg">
-        <p>Discover the only lasagna recipe you&apos;ll ever need! Continue reading to learn how to make this meaty, 
-            cheesy, crowd-pleasing Simply Lasagna Recipe tonight.</p>
-        <a href="recipes/lasagna.html">Lasagna</a>
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="home">Home</a> <!-- Home button -->
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
 
-        <h2>Cheese Cake</h2>
-        <img src="https://tse3.mm.bing.net/th?id=OIP.qlHr9Ud0bRf_xyd3Uiog5QHaHa&pid=Api&P=0&h=220">
-        <p>This cheesecake recipe is our best recipe for cheesecake with a rich and creamy texture and cherry topping 
-            for an indulgent dessert that is also easy to make! It is the perfect dessert to serve at your next party.</p>
-        <a href="recipes/cheesecake.html">Cheese Cake</a>
-
-        <h2>Beef Stew</h2>
-        <img src="https://www.allrecipes.com/thmb/CK1fq792wD_087HiCxAlMP3H654=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/RM-281995-ClassicHeartyBeefStew-ddmfs-3x4-6957-660344f4e4c8417fa6d1cf3175e0202c.jpg">
-        <p>This hearty beef stew is rich, satisfying, and packed with tender beef, lots of vegetables, and fragrant herbs.</p>
-        <a href="recipes/beef-stew.html">Beef Stew</a>
+        
     </body>
 </html>
